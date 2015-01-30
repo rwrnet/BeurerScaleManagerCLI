@@ -10,11 +10,13 @@ and outputs the entries as simple tab seperated values (TSV) for further process
 If you are looking for a UI, please check: https://github.com/Urban82/BeurerScaleManager
 
 ## Example output:
- User	Date Time	Weight	Bodyfat%	Water%	Muscles%
- 1	2015-01-28 19:10	62.5	38.9	44.5	39.2
- 1	2015-01-28 19:11	62.4	38.9	44.5	39.2
- 1	2015-01-29 10:38	62.8	39.2	44.3	39.1
- 1	2015-01-30 09:25	61.8	38.7	44.6	39.3
+```
+User	Date Time	Weight	Bodyfat%	Water%	Muscles%
+1	2015-01-28 19:10	62.5	38.9	44.5	39.2
+1	2015-01-28 19:11	62.4	38.9	44.5	39.2
+1	2015-01-29 10:38	62.8	39.2	44.3	39.1
+1	2015-01-30 09:25	61.8	38.7	44.6	39.3
+```
 
 ## Dependencies
 The python script requires:
@@ -23,15 +25,19 @@ The python script requires:
  
 ## Installation
 There are many ways to get the dependencies resolved. On an Ubuntu 14.10 I realized it that way:
- $ sudo apt-get install libusb-1.0-0
- $ sudo apt-get install python-pip
- $ sudo pip install pyusb --pre
- 
+
+```
+$ sudo apt-get install libusb-1.0-0
+$ sudo apt-get install python-pip
+$ sudo pip install pyusb --pre
+```
+
 Find further details on: https://github.com/walac/pyusb
 
 ## Usage
 Once installed you can download a data dump and decode it via
- $ sudo python scale.py update
+
+    $ sudo python scale.py update
   
 Once you downloaded the data dump, you can decode it again with
- $ python scale.py
+    $ python scale.py
